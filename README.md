@@ -1,5 +1,6 @@
 # MagiCard 🃏 Official Repo 
 
+This is a public backup to avoid random shits.
 
 ## 🔀 Branches
 
