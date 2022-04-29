@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}
+  MagiKard
+{% endblock %}
+
+{% block style %}
+<script src="https://cdn.tailwindcss.com"></script>
+{% endblock %}
+
+{% block content %}
+
+  <section id="intro">
+
+    <h1 class="title-font">About MagiKard</h1>
+    <div class="h-1 bg-green-700 w-24 opacity-75 mt-4 rounded"></div>
+    <br>
+    <p>
+    Have you ever struggled to find something to give for holidays, birthdays, and other celebrations? What about the desire to assemble your favorite photos and music into something that you can share? How time-consuming and frustrating are the card creators and video editors available today?
+    </p>
+    <br>
+    <p>
+    MagiKard is your solution to finding a meaningful and personalized gift for someone you care about! You let us know your artistic tastes, and MagiKard will auto-assemble personalized images, text, and music into a gift for you to share with someone special in your life. Or if you can tell us your favorite music and share your photo memories, MagiKard will create a slideshow for you to save and share your precious memory. With just a few clicks, MagiKard applies algorithms to generate personalized greeting cards that best fit our user’s tastes and themes. This uniquely mixed media gift can be shared with all your friends and families.
+    </p>
+
+    <h1 class="title-font mt-5">Meet our team! </h1>
+    <div class="h-1 bg-green-700 w-24 opacity-75 mt-4 rounded"></div>
+    <br>
+    <p>
+    We are a young team made up of Data Scientist graduate students from the University of San Francisco. Our team came up with the idea of automatically generating video e-card after getting frustrated with complicated video editors and annoying card makers. Created from cutting-edge machine learning methods, MagiKard takes all the tapping, pinching, and clicking out to take the hassle out of the process.
+    </p>
+  </section>
+
+  <section id="names">
+    <div class="row p-4">
+      {% for member_item in members_list %}
+        <div class="col-lg-2 col-md-4 col-sm-6">
+        <div class="text-center">
+            <div class= "pt-5">
+              <img class="rounded-circle mx-auto custom-img" src="{{ url_for('static', filename=member_item['image_url']) }}" />
+            </div>
+            <br>
+            <p class="names"><a class="name-link" href="{{member_item['LinkedIn']}}"><b>{{member_item['name']}}</b></a></p>
+            {{member_item.role}}
+        </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+{% endblock %}

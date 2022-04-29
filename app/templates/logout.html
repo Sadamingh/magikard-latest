@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+  MagiKard
+{% endblock %}
+
+{% block content %}
+  <section id="logout-msg">
+    <div class="text-center">
+      <p>Congratulations! You have logged out successfully.<br>
+         You will be redirected to the home page in <span id="demo">5</span> seconds. </p>
+      <a href="/">
+        <button class="btn btn-outline-success text-dark border-2 custom-btn-3">HOME</button>
+      </a>
+    </div>
+  </section>
+{% endblock %}
+
+{% block scripts %}
+  <script src="{{ url_for('static', filename='js/redirect.js') }}"></script>
+{% endblock %}

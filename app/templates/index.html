@@ -1,0 +1,247 @@
+{% extends "base.html" %}
+
+{% block style %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.4/fullpage.css" integrity="sha512-sb1mI5+f48d39pWqFaWYhuYWy+3egpW/92o/dO4Mo/Vuv2M3EHOaQhGAjTpsE2TMhGJSC9uBE4u1cTPxftEe5g==" crossorigin="anonymous"
+  referrerpolicy="no-referrer" />
+<script src="https://cdn.tailwindcss.com"></script>
+{% endblock %}
+
+{% block title %}
+  MagiKard
+{% endblock %}
+
+{% block content %}
+<div id="fullpage">
+  <div class="section">
+    <section class="title">
+      <div class="row">
+        <div class="col col-lg-6 col-sm-12 text-center">
+          <img class="p-3 example-img" src="{{ url_for('static', filename='assets/images/artwork1.png') }}" alt="example card">
+        </div>
+        <div class="col col-lg-6 col-sm-12 text-center mt-lg-5 pt-lg-5">
+          <h1 class="pb-2 title-font">Best e-card generator
+            <br> for
+            <span class="typer text-success" id="main" data-words="fun!, friends!, enterprise!, family!, everyone!, ever!" data-delay="100" data-deleteDelay="1000"></span>
+            <span class="cursor text-success" data-owner="main"></span>
+          </h1>
+          <a href="./create">
+            <div class="custom-btn">
+              <button type="button" class="btn btn-lg btn-outline-success custom-btn-3 text-dark border-2 custom-btn-2">Create Your Card</button>
+            </div>
+          </a>
+          <div class="pricing-text">
+            <p>Try AI-generated card for <b>free!</b><br />
+              Only $0.99 per card afterwards;<br />
+              $19.99 annual subscription.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <div class="section">
+    <section class="features">
+      <h1 class="text-center title-font">
+        Features
+      </h1>
+      <div class="h-1 mx-auto bg-green-700 w-24 opacity-75 mt-4 rounded"></div>
+      <div class="row">
+        <div class="col col-lg-6 col-sm-12 p-15">
+          <div class="row p-6">
+            <div class="col col-2 text-end">
+              <span class="fa-stack fa-2x">
+                <i class="fa fa-clock-o text-success" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div class="col col-10">
+              <h1 class="title-font pb-2 text-success">Time saving</h1>
+              <p>While most video greeting card makers force users to search through templates, images and songs, and manually order and sync their presentation, magiKard is simple and seamless.  Just enter an occasion, mood, and a simple message and magiKard will generate a card for you in minutes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-6 col-sm-12 p-15">
+          <div class="row p-6">
+            <div class="col col-2 text-end">
+              <span class="fa-stack fa-2x">
+                <i class="fa fa-code text-success" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div class="col col-10">
+              <h1 class="title-font pb-2 text-success">Simplicity and Style</h1>
+              <p>At magiKard our mission is to provide as high quality of a virtual gift with the minimum amount of human effort possible.  Our team has improved the aesthetics and personalization of the cards using modern machine learning techniques.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-6 col-sm-12 p-15">
+          <div class="row p-6">
+            <div class="col col-2 text-end">
+              <span class="fa-stack fa-2x">
+                <i class="fa fa-money text-success" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div class="col col-10">
+              <h1 class="title-font pb-2 text-success">Flexibility</h1>
+              <p>While magikard may fully auto-generate cards using images and music from our database, options to personalize your card with your own music and photos also exist.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-6 col-sm-12 p-15">
+          <div class="row p-6">
+            <div class="col col-2 text-end">
+              <span class="fa-stack fa-2x">
+                <i class="fa fa-wrench text-success"></i>
+              </span>
+            </div>
+            <div class="col col-10">
+              <h1 class="title-font pb-2 text-success">AI-based</h1>
+              <p>MagiKard uses object detection, natural language processing and non-parametric models to match, order, and annotate images, songs and text.  Our models are constantly being refined to maximize the quality of our gift cards.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+  </div>
+
+
+<!--   <div class="section">
+    <section class="instruct">
+      <div class="p-20">
+        <h1 class="text-center title-font">
+          Our Model
+        </h1>
+        <div class="h-1 mx-auto bg-green-700 w-24 opacity-75 mt-4 rounded"></div>
+        <img class="img-custom" src="https://cdn-images-1.medium.com/max/1200/0*5Z3fVFM20Q6KJZP-.gif" alt="">
+      </div>
+    </section>
+  </div> -->
+
+
+  <div class="section">
+    <section class="pricing">
+      <section>
+        <div class="container max-w-full mx-auto py-12 px-6">
+          <h1 class="text-center title-font">
+            Pricing
+          </h1>
+          <div class="h-1 mx-auto bg-green-700 w-24 opacity-75 mt-4 rounded"></div>
+          <div class="max-w-full md:max-w-6xl mx-auto my-3 md:px-8">
+            <div class="relative block flex flex-col md:flex-row items-center">
+              <div class="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-mr-4">
+                <div class="bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden">
+                  <div class="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
+                    <h1 class="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
+                      One-time Purchase
+                    </h1>
+                    <h2 class="text-sm text-gray-500 text-center pb-6">{{subscription_plans.onetime.price}}</h2>
+
+                    Looking to make a unique gift for your friends, family, and colleagues' important moments? One-time purchase is your choice!
+                  </div>
+
+                  <div class="flex flex-wrap mt-3 px-6">
+                    <ul>
+                      {% for feature in subscription_plans.onetime.features %}
+                      <li class="flex items-center">
+                        <div class=" rounded-full p-2 fill-current text-green-700">
+                          <svg class="w-6 h-6 align-middle" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                          </svg>
+                        </div>
+                        <span class="text-gray-700 text-lg ml-3">{{feature}}</span>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                  <p class="text-sm text-center p-3 pb-4">
+                    <a href="#">
+                      <button class="btn btn-lg btn-outline-success custom-btn-3 text-dark border-2" type="button" name="button">Select</button>
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="w-full max-w-md sm:w-2/3 lg:w-1/3 sm:my-5 my-8 relative z-10 bg-white rounded-lg shadow-lg">
+                <div class="text-sm leading-none rounded-t-lg bg-gray-200 text-black font-semibold uppercase py-4 text-center tracking-wide">
+                  Most Popular
+                </div>
+                <div class="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
+                  <h1 class="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
+                    Annual subscription
+                  </h1>
+                  <h2 class="text-sm text-gray-500 text-center pb-6"><span class="text-3xl">{{subscription_plans.annual.price}}</span>/yr<br></h2>
+                  Have a lot of social relationships to maintain? Want to send unique blessings without struggling of gift picking? Annual subscription is for you!
+                </div>
+                <div class="flex pl-12 justify-start sm:justify-start mt-3">
+                  <ul>
+                      {% for feature in subscription_plans.annual.features %}
+                      <li class="flex items-center">
+                        <div class=" rounded-full p-2 fill-current text-green-700">
+                          <svg class="w-6 h-6 align-middle" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                          </svg>
+                        </div>
+                        <span class="text-gray-700 text-lg ml-3">{{feature}}</span>
+                      </li>
+                      {% endfor %}
+                  </ul>
+                </div>
+
+                <p class="text-sm text-center p-3 pb-4">
+                  <a href="#">
+                    <button class="btn btn-lg btn-outline-success custom-btn-3 text-dark border-2" type="button" name="button">Select</button>
+                  </a>
+                </p>
+
+              </div>
+
+              <div class="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-ml-4">
+                <div class="bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden">
+                  <div class="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
+                    <h1 class="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
+                      Enterprise subscription
+                    </h1>
+                    <h2 class="text-sm text-gray-500 text-center pb-6">{{subscription_plans.enterprise.price}}</h2>
+
+                    Send unique e-cards to your employees. Sometimes a small custom card motivates employees more than money!
+                  </div>
+                  <div class="flex flex-wrap mt-3 px-6">
+                    <ul>
+                      {% for feature in subscription_plans.enterprise.features %}
+                      <li class="flex items-center">
+                        <div class=" rounded-full p-2 fill-current text-green-700">
+                          <svg class="w-6 h-6 align-middle" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                          </svg>
+                        </div>
+                        <span class="text-gray-700 text-lg ml-3">{{feature}}</span>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+
+                  <p class="text-sm text-center p-3 pb-4">
+                    <a href="#">
+                      <button class="btn btn-lg btn-outline-success custom-btn-3 text-dark border-2" type="button" name="button">Select</button>
+                    </a>
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+</div>
+<script src="{{ url_for('static', filename='js/fullpage.js') }}"></script>
+<script src="{{ url_for('static', filename='js/scrolling.js') }}"></script>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.4/fullpage.min.js" integrity="sha512-/Xa8MmDEmJGU9QR4ZAv3j8alrNa9uj7X0/QH9OodYhkRSCRmytXgzJxSoiqsWqSd1rFu0/rK+JPLG+Q5qI8coA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+<script src="{{ url_for('static', filename='js/scrolling.js') }}"></script>
+<script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+{% endblock%}

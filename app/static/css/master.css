@@ -1,0 +1,203 @@
+.title {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 10%;
+  padding-bottom: 8%;
+}
+
+#download {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+
+.download-buttons {
+  margin-top: 10%;
+  padding-top: 5%;
+}
+
+.preview {
+  padding-top: 5%;
+}
+
+.example-img {
+  width: 100%;
+}
+
+.example-video {
+  padding-top: 5%;
+  width: 80%;
+  height: auto;
+}
+
+.custom-btn {
+  margin-top: 5%;
+}
+
+.pricing-text {
+  padding-top: 5%
+}
+
+#login-form {
+  padding-top: 5%;
+  padding-left: 35%;
+  padding-right: 35%;
+}
+
+.custom-btn-2 {
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  border-radius: 500px;
+}
+
+#intro {
+  padding-top: 2%;
+  padding-bottom: 0%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.custom-btn-3 {
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  border-radius: 500px;
+}
+
+.custom-btn-3:hover {
+  color: #fff !important;
+}
+
+#page-404 {
+  margin-top: 10%;
+  padding-bottom: 10%;
+}
+
+.custom-img {
+  width: 70%;
+}
+
+#names {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#logout-msg {
+  padding-top: 10%;
+}
+
+.custom-col {
+  padding: 5%;
+}
+
+.contact-text {
+  padding-left: 5%;
+  padding-bottom: 5%;
+  padding-right: 5%;
+  padding-top: 20%;
+}
+
+.address {
+  padding-left: 5%;
+  padding-right: 50%;
+}
+
+#contact-info {
+  padding-left: 10%;
+}
+
+#register-box {
+  padding-left: 35%;
+  padding-right: 35%;
+  padding-top: 2%;
+}
+
+#reset-box {
+  padding-left: 35%;
+  padding-right: 35%;
+  padding-top: 2%;
+}
+
+body {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.custom-btn-4 {
+  margin-top: 20%;
+}
+
+.typer {
+  color: "green" !important;
+}
+
+.title-font {
+  font-family: 'PT Serif', serif;
+  font-size: 40px;
+}
+
+.features {
+  padding-top:8%;
+  padding-bottom: 6%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.img-custom {
+  padding-left: 10%;
+  width: 90%;
+}
+
+.instruct {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.pricing {
+  padding-top: 5%;
+  /* padding-left: 5%;
+  padding-right: 15%; */
+}
+
+.name-link {
+  padding-bottom: 3px;
+  /* font-family: 'PT Serif', serif; */
+}
+
+.name-link:hover {
+  color: green !important;
+}
+
+p .names {
+  padding-bottom: 1%;
+}
+
+.custom-brand {
+  font-family: 'PT Serif', serif;
+}
+
+.custom-brand:hover {
+  color: green !important;
+}
+
+li .nav-item {
+  margin-left: 15px !important;
+  margin-right: 15px !important;
+  position: relative;
+  display: inline-block;
+}
+
+li .nav-item:after {
+  content: "";
+  position: absolute;
+  left:0;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background-color: green;
+  transition: width .3s ease-in-out;
+}
+
+li .nav-item:hover:after {
+  width: 100%;
+}

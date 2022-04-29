@@ -1,0 +1,1 @@
+SQL_STRING=postgresql://magikard_main_user:magikard_main_user_pswd@magikard.crm9dfnjrcsw.us-west-2.rds.amazonaws.com/postgres

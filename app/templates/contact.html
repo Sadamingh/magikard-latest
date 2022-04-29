@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}
+  MagiKard
+{% endblock %}
+
+{% block style %}
+<script src="https://cdn.tailwindcss.com"></script>
+{% endblock %}
+
+{% block content %}
+  <section id="contact-info">
+    <div class="row">
+      <div class="col-lg-6 custom-col">
+        <form>
+          <div class="form-group pb-3">
+            <label for="exampleFormControlInput1">Name</label>
+            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Firstname Lastname">
+          </div>
+          <div class="form-group pb-3">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+          </div>
+          <div class="form-group pb-3">
+            <label for="exampleFormControlSelect2">Select a Subject</label>
+            <select multiple class="form-control" id="exampleFormControlSelect1">
+              <option class="p-1">Payment</option>
+              <option class="p-1">Service</option>
+              <option class="p-1">Refund</option>
+              <option class="p-1">Issue</option>
+              <option class="p-1">Career</option>
+            </select>
+          </div>
+          <div class="form-group pb-3">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <br>
+          <div class="text-center">
+            <button type="submit" class="btn btn-lg btn-outline-success custom-btn-3 text-dark border-2">Send</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-6">
+        <div class="contact-text">
+          <h1 class="title-font">Contact Information</h1>
+          <div class="h-1 bg-green-700 w-24 opacity-75 mt-4 rounded"></div>
+          <br>
+          <p>Email: teammagicard@gmail.com</p>
+          <p>Address: </p>
+          <div class="address">
+            <span>
+              101 Howard Street <br>
+              CA 94105 <br>
+              San Francisco
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

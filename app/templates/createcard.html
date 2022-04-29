@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}
+  MagiKard
+{% endblock %}
+
+{% block content %}
+  <section id="create_magicard">
+    <div class="row">
+      <div class="col-lg-6 custom-col">
+        <form>
+          <div class="form-group pb-3">
+            <h5>Mood</h5>
+            <select multiple class="form-control" id="exampleFormControlSelect1">
+              {% for mood in moods_list %}
+                <option class="p-1">{{mood}}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="form-group pb-3">
+            <h5>Additional Mood (Optional)</h5>
+            <select multiple class="form-control" id="exampleFormControlSelect1">
+              {% for mood in moods_list %}
+                <option class="p-1">{{mood}}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="form-group pb-3">
+            <h5>Occasion</h5>
+            <select multiple class="form-control" id="exampleFormControlSelect1">
+              {% for occasion in occasions_list %}
+                <option class="p-1">{{occasion}}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="form-group pb-3">
+            <h5>Write your personal message</h5>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+          </div>
+          <br>
+          <div class="text-center">
+            <a href="./download">
+              <button type="button" class="btn btn-outline-success custom-btn-3 text-dark border-2">Generate</button>
+             </a>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-6">
+        <br>
+        <div class="contact-text">
+          <h5>Drag and drop your music file below</h5>
+          <div class="input-group mb-3">
+            <input type="file" class="form-control" id="inputGroupFile02">
+            <label class="input-group-text" for="inputGroupFile02">Upload</label>
+          </div>
+          <br>
+          <h5>Drag and drop your image file below</h5>
+          <div class="input-group mb-3">
+            <input type="file" class="form-control" id="inputGroupFile02">
+            <label class="input-group-text" for="inputGroupFile02">Upload</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
